@@ -1,63 +1,66 @@
 export const mediaKit = {
   stats: [
-    {
-      value: 600,
-      suffix: "+",
-      label: "MONTHLY USERS",
-    },
-    {
-      value: 25,
-      suffix: "K+",
-      label: "WEBSITE VISITORS",
-    },
-    {
-      value: 500,
-      suffix: "+",
-      label: "WORDS",
-    },
-    {
-      value: 157,
-      suffix: "",
-      label: "LEARNING PAGES",
-    },
+    { value: 600, suffix: "+", label: "MONTHLY USERS" },
+    { value: 25, suffix: "K+", label: "WEBSITE VISITORS" },
+    { value: 500, suffix: "+", label: "WORDS" },
+    { value: 157, suffix: "", label: "PAGES OF LEARNING CONTENT" },
+    { value: 10, suffix: "+", label: "LANGUAGES" },
+    { value: 40, suffix: "+", label: "COUNTRIES" },
   ],
-
   pillars: [
-    {
-      number: "01",
-      title: "EDUCATION",
-      description:
-        "German grammar, vocabulary and interactive learning.",
-    },
-    {
-      number: "02",
-      title: "TECHNOLOGY",
-      description:
-        "AI, educational technology and digital innovation.",
-    },
-    {
-      number: "03",
-      title: "GERMANY",
-      description:
-        "Culture, cities, events and everyday life.",
-    },
-    {
-      number: "04",
-      title: "LIFESTYLE",
-      description:
-        "Travel, fashion, food and modern city life.",
-    },
-    {
-      number: "05",
-      title: "COMMUNITY",
-      description:
-        "International students, expats and creators.",
-    },
-    {
-      number: "06",
-      title: "CREATOR",
-      description:
-        "Video, event coverage, interviews and storytelling.",
-    },
+    { number: "01", title: "EDUCATION", description: "German grammar, vocabulary, learning tips, study in Germany, interactive exercises and A0–C1 learning." },
+    { number: "02", title: "TECHNOLOGY", description: "AI and EdTech, consumer electronics, robotics, apps, tools and the future of learning." },
+    { number: "03", title: "GERMANY", description: "Culture, cities, events, student life, moving to Germany and everyday life." },
+    { number: "04", title: "LIFESTYLE", description: "Travel, fashion, creator experiences, food, cafés, wellbeing and behind the scenes." },
+    { number: "05", title: "COMMUNITY", description: "International students, expats, young professionals, German learners and a global audience." },
+    { number: "06", title: "CREATOR", description: "Short-form video, long-form content, event coverage, interviews and brand collaborations." },
+  ],
+  audience: [
+    "International students",
+    "Expats",
+    "Young learners in Germany",
+    "Young professionals",
+    "German learners",
+    "Technology enthusiasts",
+    "Travel & lifestyle audience",
+    "International communities",
+  ],
+  creatorFormats: [
+    ["SHORT-FORM VIDEO", "Reels, TikTok, YouTube Shorts"],
+    ["LONG-FORM VIDEO", "In-depth stories, vlogs, documentaries"],
+    ["EVENT COVERAGE", "Technology, innovation, culture and lifestyle events"],
+    ["EDUCATIONAL CONTENT", "German language, technology, culture and study life in Germany"],
+    ["PRODUCT STORYTELLING", "Authentic reviews, real-life experiences, creator integration"],
+    ["INTERVIEWS", "Conversations with creators, experts and changemakers"],
+    ["UGC & CAMPAIGN CONTENT", "Creative campaigns, storytelling concepts and brand collaborations"],
+    ["BLOG & WEBSITE CONTENT", "Guides, articles, SEO content and recommendations"],
+  ],
+  collaborationOpportunities: [
+    ["Brand Stories", "Authentic integration into real stories"],
+    ["Event Coverage", "Tech, education, travel, lifestyle"],
+    ["Product Integration", "Meaningful and natural product placement"],
+    ["Creator Campaigns", "Social content and storytelling"],
+    ["Educational Collaborations", "Language learning and educational integrations"],
+    ["Travel & Hospitality", "Destinations, hotels, experiences"],
+    ["Technology & Innovation", "Consumer electronics, AI, mobility, robotics"],
+    ["Community Initiatives", "Social impact, diversity, inclusion"],
+  ],
+  collaborationTypes: [
+    "BRAND STORIES",
+    "EVENT COVERAGE",
+    "PRODUCT INTEGRATION",
+    "CREATOR CAMPAIGNS",
+    "EDUCATIONAL PROGRAMS",
+    "TRAVEL & HOSPITALITY",
+    "TECHNOLOGY & INNOVATION",
+    "SOCIAL IMPACT INITIATIVES",
+  ],
+  trustedBrands: ["SONY", "BOSCH", "Insta360", "DJI", "QATAR", "IFA"],
+  impact: [
+    "Create opportunities",
+    "Break down barriers",
+    "Support learners worldwide",
+    "Bring people and cultures closer",
+    "Build a more inclusive future",
   ],
 };

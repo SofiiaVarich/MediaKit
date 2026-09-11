@@ -1,18 +1,6 @@
 import SectionImage from "@/components/SectionImage";
+import MediaGallery from "@/components/MediaGallery";
 
 export default function Contact() {
-  return (
-    <section className="section section--dark">
-      <div className="section__inner">
-        <span className="section-number">12 / 12</span>
-        <h2 className="editorial-heading">LET'S <span className="orange">TALK</span></h2>
-        <SectionImage
-                  src="/images/images/media-kit/contact/konnektoren-card.jpg"
-                  label="Start a conversation"
-                  position="center 20%"
-                  tone="dark"
-                />
-      </div>
-    </section>
-  );
+  return <section className="section section--dark"><div className="section__inner"><span className="section-number">12 / 12</span><h2 className="editorial-heading">THANK YOU<br /><span className="orange">FOR BEING PART</span><br />OF THIS JOURNEY.</h2><div className="section-copy"><p>Konnektoren is more than a platform — it’s a community of people who believe in a more connected, inclusive and brighter tomorrow.</p><div className="content-grid">{["People bring us together", "Languages open doors", "Culture creates understanding", "Ideas drive change", "Opportunities create futures"].map((item) => <article className="content-card" key={item}><h3>{item}</h3></article>)}</div><h3 className="section-kicker">Contact</h3><div className="contact-details"><p>Instagram: <a href="https://instagram.com/konnektoren.help">@konnektoren.help</a></p><p>Website: <a href="https://www.konnektoren.help">www.konnektoren.help</a></p><p>YouTube: Konnektoren</p><p>LinkedIn: Konnektoren</p></div><p className="quote">Let’s connect and create a brighter tomorrow.<br />Same Language. More Possibilities.</p></div><SectionImage src="/images/images/media-kit/contact/konnektoren-card.jpg" label="Start a conversation" position="center 20%" tone="dark" /><MediaGallery section="contact" /></div></section>;
 }

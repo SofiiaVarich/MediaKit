@@ -11,6 +11,7 @@ import {
 import { useRef } from "react";
 
 import HandwrittenNote from "@/components/HandwrittenNote";
+import MediaGallery from "@/components/MediaGallery";
 
 export default function Cover() {
   const ref = useRef<HTMLElement>(null);
@@ -144,6 +145,7 @@ export default function Cover() {
         >
           MEDIA KIT
           <strong>2026</strong>
+          <span>Learn German.<br />Connect Everything.</span>
         </motion.div>
 
         <HandwrittenNote className="cover__note">
@@ -156,6 +158,8 @@ export default function Cover() {
       <div className="cover__scroll">
         SCROLL TO EXPLORE ↓
       </div>
+
+      <div className="cover__gallery"><MediaGallery section="cover" /></div>
     </section>
   );
 }
