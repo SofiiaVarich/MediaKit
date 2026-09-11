@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { assetPath } from "@/lib/assetPath";
 
 interface SectionImageProps {
   label: string;
@@ -25,7 +26,7 @@ export default function SectionImage({
       transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
     >
       <Image
-        src={src}
+        src={assetPath(src)}
         alt={label}
         fill
         sizes="(max-width: 900px) 92vw, 70vw"

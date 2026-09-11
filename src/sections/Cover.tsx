@@ -12,6 +12,7 @@ import { useRef } from "react";
 
 import HandwrittenNote from "@/components/HandwrittenNote";
 import MediaGallery from "@/components/MediaGallery";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Cover() {
   const ref = useRef<HTMLElement>(null);
@@ -54,7 +55,7 @@ export default function Cover() {
         }}
       >
         <Image
-          src="/images/images/cover.jpg"
+          src={assetPath("/images/images/cover.jpg")}
           alt="Konnektoren Media Kit"
           fill
           priority

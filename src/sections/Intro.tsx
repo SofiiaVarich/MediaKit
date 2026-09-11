@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import EditorialHeading from "@/components/EditorialHeading";
 import MediaGallery from "@/components/MediaGallery";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Intro() {
   return (
@@ -24,7 +25,7 @@ export default function Intro() {
           </motion.div>
           <div className="intro-visual">
             <motion.div className="intro-visual__image" initial={{ opacity: 0, scale: 1.12, y: 45 }} whileInView={{ opacity: 1, scale: 1, y: 0 }} viewport={{ once: true, margin: "-15%" }} transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}>
-              <Image src="/images/images/media-kit/audience/language-learning-desk.jpg" alt="Konnektoren community in Berlin" fill sizes="(max-width: 900px) 92vw, 42vw" style={{ objectFit: "cover" }} />
+              <Image src={assetPath("/images/images/media-kit/audience/language-learning-desk.jpg")} alt="Konnektoren community in Berlin" fill sizes="(max-width: 900px) 92vw, 42vw" style={{ objectFit: "cover" }} />
             </motion.div>
           </div>
         </div>

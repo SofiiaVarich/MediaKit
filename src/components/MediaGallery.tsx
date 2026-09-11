@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { assetPath } from "@/lib/assetPath";
 
 const galleries = {
   cover: [
@@ -127,7 +128,7 @@ export default function MediaGallery({ section }: { section: GalleryName }) {
           transition={{ duration: 0.65, delay: (index % 4) * 0.08, ease: [0.16, 1, 0.3, 1] }}
           whileHover={{ y: -8, scale: 1.02 }}
         >
-          <Image src={src} alt={alt} fill sizes="(max-width: 600px) 46vw, 22vw" style={{ objectFit: "cover" }} />
+          <Image src={assetPath(src)} alt={alt} fill sizes="(max-width: 600px) 46vw, 22vw" style={{ objectFit: "cover" }} />
           <figcaption>{alt}</figcaption>
         </motion.figure>
       ))}
